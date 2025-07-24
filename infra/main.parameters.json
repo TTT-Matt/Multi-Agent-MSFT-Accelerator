@@ -7,13 +7,13 @@
           {
             "name": "gpt",
             "model": {
-              "name": "gpt-4o",
-              "version": "2024-08-06",
+              "name": "o4-mini",
+              "version": "2025-04-16",
               "format": "OpenAI"
             },
             "sku": {
               "name": "GlobalStandard",
-              "capacity": 140
+              "capacity": 20
             }
           }
         ]

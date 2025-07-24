@@ -18,12 +18,12 @@ param enableTelemetry bool = true
 
 param existingLogAnalyticsWorkspaceId string = ''
 
-// Restricting deployment to only supported Azure OpenAI regions validated with GPT-4o model
+// Restricting deployment to only supported Azure OpenAI regions validated with o4-mini model
 @metadata({
   azd : {
     type: 'location'
     usageName : [
-      'OpenAI.GlobalStandard.gpt-4o, 150'
+      'OpenAI.GlobalStandard.04-mini, 20'
     ]
   }
 })
@@ -33,16 +33,16 @@ param aiDeploymentsLocation string
 
 @minLength(1)
 @description('Name of the GPT model to deploy:')
-param gptModelName string = 'gpt-4o'
+param gptModelName string = 'o4-mini'
 
-param gptModelVersion string = '2024-08-06'
+param gptModelVersion string = '2025-04-16'
 
 @minLength(1)
 @description('GPT model deployment type:')
 param modelDeploymentType string = 'GlobalStandard'
 
 @description('Optional. AI model deployment token capacity.')
-param gptModelCapacity int = 150
+param gptModelCapacity int = 20
 
 @description('Set the image tag for the container images used in the solution. Default is "latest".')
 param imageTag string = 'latest'
