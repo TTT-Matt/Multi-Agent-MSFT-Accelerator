@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "azure": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "mcp/azure",
+        "server",
+        "start"
+      ]
+    }
+  }
+}

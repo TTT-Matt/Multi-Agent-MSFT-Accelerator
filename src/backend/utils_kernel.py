@@ -17,13 +17,13 @@ from context.cosmos_memory_kernel import CosmosMemoryContext
 # Import agent factory and the new AppConfig
 from kernel_agents.agent_factory import AgentFactory
 from kernel_agents.group_chat_manager import GroupChatManager
-from kernel_agents.hr_agent import HrAgent
+from src.backend.kernel_agents.example.hr_agent import HrAgent
 from kernel_agents.human_agent import HumanAgent
-from kernel_agents.marketing_agent import MarketingAgent
+from src.backend.kernel_agents.example.marketing_agent import MarketingAgent
 from kernel_agents.planner_agent import PlannerAgent
-from kernel_agents.procurement_agent import ProcurementAgent
-from kernel_agents.product_agent import ProductAgent
-from kernel_agents.tech_support_agent import TechSupportAgent
+from src.backend.kernel_agents.example.procurement_agent import ProcurementAgent
+from src.backend.kernel_agents.example.product_agent import ProductAgent
+from src.backend.kernel_agents.example.tech_support_agent import TechSupportAgent
 from models.messages_kernel import AgentType
 from semantic_kernel.agents.azure_ai.azure_ai_agent import AzureAIAgent
 

@@ -19,11 +19,11 @@ from semantic_kernel.functions.kernel_arguments import KernelArguments
 from semantic_kernel import Kernel
 
 # Import agent types to test
-from kernel_agents.hr_agent import HrAgent
+from src.backend.kernel_agents.example.hr_agent import HrAgent
 from kernel_agents.human_agent import HumanAgent
-from kernel_agents.marketing_agent import MarketingAgent
-from kernel_agents.procurement_agent import ProcurementAgent
-from kernel_agents.tech_support_agent import TechSupportAgent
+from src.backend.kernel_agents.example.marketing_agent import MarketingAgent
+from src.backend.kernel_agents.example.procurement_agent import ProcurementAgent
+from src.backend.kernel_agents.example.tech_support_agent import TechSupportAgent
 
 # Configure logging for the tests
 logging.basicConfig(level=logging.INFO)
